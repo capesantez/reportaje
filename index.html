@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cuenca Juniors: Reportaje Multimedia</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #1e1e1e;
+            text-align: justify;
+        }
+
+        header {
+            background-color: #C68E17;
+            padding: 30px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2.5em;
+            text-transform: uppercase;
+            color: #1e1e1e;
+            font-family: 'Bebas Neue', 'Impact', 'Oswald', 'Segoe UI', Arial, sans-serif;
+            letter-spacing: 4px;
+            /* Elimina la sombra */
+            /* text-shadow: none; */
+        }
+
+        footer {
+            background-color: #002855;
+            /* azul marino */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .page {
+            display: none;
+            position: relative;
+        }
+
+        .active {
+            display: block;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #002855;
+            text-align: left;
+        }
+
+        .navigation {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .navigation button {
+            padding: 4px 10px;
+            margin: 0 2px;
+            background-color: #daba04;
+            color: #111;
+            border: 2px solid #111;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 0.95em;
+            /* más pequeño */
+            letter-spacing: 2px;
+            font-family: 'Bebas Neue', 'Impact', 'Oswald', 'Segoe UI', Arial, sans-serif;
+            /* fuentes llamativas */
+            text-shadow: 1px 1px 2px #daba04;
+        }
+
+        .navigation button:hover {
+            background-color: #111;
+        }
+
+        img,
+        video,
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        img {
+            height: auto;
+        }
+
+        video,
+        iframe {
+            width: 640px;
+            height: 360px;
+        }
+
+        .text-box {
+            background-color: #f5f5f5;
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .section-header,
+        .section-footer {
+            background-color: #002855;
+            color: #FFD700;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .intro-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .intro-wrapper img {
+            width: 160px;
+            height: auto;
+            margin: 0;
+            border-radius: 10px;
+        }
+
+        .intro-wrapper p {
+            flex: 1;
+            margin: 0;
+        }
+
+        ul {
+            margin-bottom: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .audio-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Agrega la fuente Bebas Neue desde Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        CUENCA JUNIORS: REPORTAJE ESPECIAL 2024-2025
+    </header>
+
+    <div class="container">
+
+        <!-- Página 1 -->
+        <div class="page active" id="note-page">
+            <h1>El Nacimiento de una Nueva Fuerza (2024)</h1>
+            <h2>Cuenca Juniors: Un Fenómeno Inmediato en el Fútbol Azuayo</h2>
+            <div class="text-box">
+                <div class="intro-wrapper">
+                    <p>El año 2024 marcó el inicio de una era vibrante en el fútbol de Cuenca con la fundación de Cuenca
+                        Juniors. Este club, que se distingue del tradicional Club Deportivo Cuenca, irrumpió en la
+                        escena con una ambición clara: no solo competir, sino convertirse en un referente en el
+                        desarrollo de talentos jóvenes y ascender rápidamente en las categorías del balompié
+                        ecuatoriano. Su impacto fue tan significativo que, en su primer año de existencia, ya estaba
+                        escribiendo capítulos históricos en la provincia de Azuay.</p>
+                </div>
+                <p>La visión detrás de Cuenca Juniors fue la de construir un proyecto deportivo sólido desde sus
+                    cimientos. El objetivo inicial era dominar el Ascenso Azuayo (Segunda Categoría), una liga crucial
+                    que otorga un cupo a la Serie B del fútbol ecuatoriano. La estrategia se centró en una combinación
+                    de formación de base y la incorporación de jugadores con experiencia, buscando un equilibrio que
+                    permitiera un crecimiento sostenido y competitivo.</p>
+            </div>
+            <!-- Collage de dos imágenes fuera del cuadro de texto -->
+            <div style="display: flex; gap: 6px; justify-content: center; margin-top: 20px;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKKjHp1sXq2zYf7G0jInZlCVhRwHYXXQyh4A&s"
+                    alt="Imagen 1" style="width: 35%; height: 280px; object-fit: contain; border-radius: 10px 0 0 10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/f4e5b6412c5c96215659d4b16ab89eaf/revisions/5c612975cc514c5a85df1a19f6d33c71/renditions/4cda70451873fdb5b595f42d29970a29"
+                    alt="Imagen 2" style="width: 65%; height: 280px; object-fit: cover; border-radius: 0 10px 10px 0;">
+            </div>
+            <!-- Reemplaza el video de la página 1 por video3 local -->
+            <video controls src="audio/video3.mp4" style="width: 60%; height: 320px; object-fit: cover; border-radius: 10px; display: block; margin: 20px auto;"></video>
+            <div class="text-box">
+                <p>El club se ha ganado el apodo de "Los Gallos", un símbolo de su espíritu combativo y su determinación
+                    en el campo de juego. Desde sus primeros días, la energía y el compromiso del equipo han sido
+                    palpables, generando entusiasmo entre los aficionados y la comunidad futbolística local.
+                </p>
+                <img src="https://lightroom.adobe.com/v2c/spaces/6b25d92a62dc4c85849814092093be19/assets/a653ef5dd9cf47c83bffbe4dafb5c967/revisions/241cac7dd73a481598eb5f592525aa0a/renditions/c846e0a9630169dcd93ed486a787a6e8"
+                    alt="Gallos Cuenca Juniors" style="width: 60%; display: block; margin: 20px auto; border-radius: 10px;">
+                <p>A continuación, se muestra un audio de un dirigente que fue entrevistado, donde nos indica como surgió la historia de este club.</p>
+            </div>
+            <!-- Párrafo antes del audio -->
+            <div class="audio-wrapper">
+                <audio controls>
+                    <source src="audio/entrevista1.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </div>
+            <div class="section-footer" style="background-color: #002855; color: #8d7a2d; text-align: center; padding: 10px; margin-top: 30px; border-radius: 5px; font-weight: bold;">
+    Hecho por: Roberto Becerra y Paulo Novillo
+</div>
+        </div>
+
+        <!-- Página 2 -->
+        <div class="page" id="media-page">
+            <h1>El Ascenso Provincial: Un Debut de Campeones (2024)</h1>
+            <h2>Dominio Absoluto en el Ascenso Azuayo: La Primera Estrella</h2>
+            <div class="text-box">
+                <p>La temporada 2024 fue un testimonio rotundo del compromiso y la estrategia de Cuenca Juniors. El
+                    equipo no solo participó en el Ascenso Azuayo, sino que lo hizo with un rendimiento excepcional,
+                    dejando una huella imborrable en su debut. Se coronaron campeones de Azuay en su primer año de
+                    historia en la Segunda Categoría, un logro sin precedentes para un club recién fundado.</p>
+                <p>El camino hacia el campeonato provincial estuvo marcado por un dominio notable. Cuenca Juniors se
+                    mantuvo invicto durante gran parte de la temporada, liderando el Grupo A del torneo provincial. Este
+                    control se reflejó en victorias contundentes, como un impresionante 5-0 en el ascenso provincial, un
+                    partido que no solo sumó puntos, sino que también sirvió como una declaración de intenciones. En ese
+                    encuentro, el experimentado delantero Roberto 'La Tuka' Ordóñez, quien se unió oficialmente al club
+                    en enero de 2025.</p>
+            </div>
+            <!-- Collage de 4 imágenes -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 20px auto; max-width: 900px;">
+                <img src="https://scontent.fgye1-2.fna.fbcdn.net/v/t39.30808-6/520900024_1884535498779182_5039000748667818288_n.jpg?stp=dst-jpg_p180x540_tt6&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF0Bl-KyTIaXGqtLsCNiBwuHPl5dAzUpdAc-Xl0DNSl0K-N6g5-7kz40BeXqZrqTD1NwCSBGP_Idg4-iFHfYwZj&_nc_ohc=XWvnagM2FUUQ7kNvwEybwMt&_nc_oc=Adn-R77_V6uTYzbI-H-Wf7yakKDoXl3nbBykA_mIy58zCJaakGJbOnBhqebF4pNYlWG2Ta55EpV0iRWPR4Dve72M&_nc_zt=23&_nc_ht=scontent.fgye1-2.fna&_nc_gid=7X0BfUWquTzpTu0djDJqjg&oh=00_AfT5nLTdnf8Bs8Zz_QO2-1ctos4c175EzbFfEMYZuf7C1A&oe=688222A6"
+                    alt="Collage 1" style="width:100%; height:300px; object-fit:cover; border-radius:10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/9de9e4e65732370d2ea85f435f250c27/revisions/99d433bef0024780a66209ebfacf1ed4/renditions/44cd5dccb463cc02592d28184354ba1a"
+                    alt="Collage 2" style="width:100%; height:300px; object-fit:cover; border-radius:10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/6358b94722a4e638fcc612ff2fca1879/revisions/d640385c1a0d45b6ab5e50474f1c8116/renditions/6f8ee79bcc121d056f84a21937959a81"
+                    alt="Collage 3" style="width:100%; height:300px; object-fit:cover; border-radius:10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/a94c9160859a5d91cdcc80b01cfe9400/revisions/d7684e158d3e480e9efac005d17bf61f/renditions/fe76fdad769172d7b8c30f6c95ab8804"
+                    alt="Collage 4" style="width:100%; height:300px; object-fit:cover; border-radius:10px;">
+            </div>
+            <div class="text-box">
+                <p>Este campeonato no solo les dio la gloria local, sino que también les abrió las puertas a
+                    competiciones de mayor envergadura, asegurándoles un lugar en la prestigiosa Copa Ecuador 2025, a continuación, podemos escuchar las expectativas de los hinchas del club para el equipo en la presente temporada.</p>
+            </div>
+            <!-- Audios adicionales después del último párrafo de la página dos -->
+            <div class="audio-wrapper">
+                <audio controls>
+                    <source src="audio/entrevista2.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </div>
+            <div class="audio-wrapper">
+                <audio controls>
+                    <source src="audio/entrevista3.mp3" type="audio/mpeg">
+                    Tu navegador no soporta la reproducción de audio.
+                </audio>
+            </div>
+            <div class="section-footer" style="background-color: #002855; color: #8d7a2d; text-align: center; padding: 10px; margin-top: 30px; border-radius: 5px; font-weight: bold;">
+    Hecho por: Roberto Becerra y Paulo Novillo
+</div>
+        </div>
+
+        <!-- Página 3 -->
+        <div class="page" id="interview-page">
+            <h1>La Prueba Nacional: Cerca de la Gloria (2024)</h1>
+            <h2>El Salto al Escenario Nacional: Un Desempeño Prometedor</h2>
+            <div class="text-box">
+                <p>Tras su rotundo éxito provincial, Cuenca Juniors llevó su ambición al ámbito nacional. En el Ascenso
+                    Nacional de 2024, el equipo demostró su capacidad al llegar hasta los cuartos de final, fue en esta
+                    instancia donde el sueño del ascenso a la Serie B se detuvo, al sufrir su primera derrota histórica
+                    ante La Unión.</p>
+                <p>A pesar de la eliminación, su desempeño en el Ascenso Nacional de 2024 fue suficiente para ser
+                    considerado entre los mejores equipos de Segunda Categoría, lo que les permitió clasificar
+                    directamente a la Copa Ecuador 2025.</p>
+                <!-- Imágenes después de los dos primeros párrafos -->
+                <div style="display: flex; gap: 12px; justify-content: center; margin: 20px 0;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/ef3302306b92e9b9f30591624b0aabb0/revisions/9534ced1a3d746b8b92f30c9420752d5/renditions/65daba199b915326c5f00085dbf99482"
+                        alt="Imagen 1 Ascenso Nacional" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/46c3a5c74290296cf3c01f0dcbbcc937/revisions/aac1e0b5676e4a7281559797ae5d1bc1/renditions/7efdb8ec01a039afc1dc612f8336a5ea"
+                        alt="Imagen 2 Ascenso Nacional" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/516d594b93834516b1a9d48591fa3460/assets/29ad584604722b325e9fdb73e5b45d10/revisions/a611b47ca917415bb94e56f7d19b9275/renditions/4de2665c60849d3134557afb724caeee"
+                        alt="Imagen 3 Ascenso Nacional" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <p>La Copa Ecuador 2025 se convirtió en un nuevo escenario para Cuenca Juniors, una plataforma para
+                    medirse con clubes de mayor jerarquía, en la primera fase, el equipo se enfrentó a Atlético
+                    Vinotinto en un vibrante encuentro disputado el 9 de junio de 2025 en el Estadio Alejandro Serrano
+                    Aguilar. Cuenca Juniors eliminó a su rival en una emocionante definición por penales (5-4), tras un
+                    empate 2-2 en el tiempo reglamentario.</p>
+                <p>En este partido, el experimentado delantero Roberto 'La Tuka' Ordóñez, quien se unió al club en enero
+                    de 2025, ya había dejado su huella, anotando un gol clave y brindando una asistencia para el segundo
+                    tanto del equipo, demostrando su liderazgo y calidad, el arquero Adrián Cortez también fue
+                    fundamental al atajar un penal decisivo.</p>
+            </div>
+            <iframe src="https://www.youtube.com/embed/QZEZ2JKSPk8?start=1" title="Video YouTube Cuenca Juniors"
+                allowfullscreen></iframe>
+            <div class="text-box">
+                <p>El sorteo de los dieciseisavos de final de la Copa Ecuador 2025 trajo una noticia que desató la
+                    euforia en el club: Cuenca Juniors se enfrentaría a Barcelona Sporting Club, uno de los gigantes y
+                    el club más popular y laureado del fútbol ecuatoriano. Este partido, programado para el 28 de agosto
+                    en el Estadio Alejandro Serrano Aguilar, representa una oportunidad única para el club de obtener
+                    visibilidad, generar ingresos valiosos y, sobre todo, dejar una marca imborrable en su joven
+                    historia.</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu7wngA-OWB50HCmWyb9Y-wpiYTP4ihyD23w&s"
+                alt="Imagen adicional Cuenca Juniors" />
+            <div class="section-footer" style="background-color: #002855; color: #8d7a2d; text-align: center; padding: 10px; margin-top: 30px; border-radius: 5px; font-weight: bold;">
+    Hecho por: Roberto Becerra y Paulo Novillo
+</div>
+        </div>
+
+        <!-- Página 4 -->
+        <div class="page" id="gallery-page">
+            <h1>La Plantilla y el Liderazgo (2024-2025)</h1>
+            <h2>Talento, Experiencia y Visión en el Corazón de los Gallos</h2>
+            <div class="text-box">
+                <p>La fuerza de Cuenca Juniors reside en la calidad de su plantilla y en el liderazgo estratégico de su
+                    cuerpo técnico, el equipo cuenta con 17 jugadores, con una edad media de 28.5 años, incluyendo 3
+                    jugadores extranjeros que aportan una dimensión internacional y experiencia al plantel.</p>
+
+                <p>Entre los nombres destacados de la plantilla se encuentran:</p>
+                <ul>
+                    <li><strong>Portero:</strong> Adrián Cortez (34 años)</li>
+                    <li><strong>Defensas:</strong> Kevin Nazareno (26 años), Andrés Cheme (31 años), Elber Olaya (21
+                        años), Julio César Arzú (22 años), Byron Torrez (31 años)</li>
+                    <li><strong>Centrocampistas:</strong> Jorge Góngora (33 años), Jonathan Lucas (29 años), Henrry
+                        Mercado (27 años), Edwin Zambrano (27 años), Miguel Sevillano (24 años), Jesús Rodríguez (25
+                        años), Bryan González (27 años)</li>
+                    <li><strong>Delanteros:</strong> Roberto 'La Tuka' Ordóñez (40 años), Lucas Pugh (31 años), Deivi
+                        Canchingre (21 años)</li>
+                </ul>
+                <!-- Collage de imágenes de la plantilla -->
+                <div style="display: flex; gap: 12px; justify-content: center; margin: 20px 0;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/4081ef7c989046dcb14dc697a3787dcc/assets/07aec5a10dc68825d9a2dcb0675c1239/revisions/e0a1820cbca14af987d55c613ddd9909/renditions/ca19196629ddebd8d073bd6a18f92852"
+                        alt="Plantilla 1" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/4081ef7c989046dcb14dc697a3787dcc/assets/ee945f82e2d42531c86ace3682a09ef2/revisions/f36c367646034f90b53e695102cefd3d/renditions/a581ad631a3c0de718177102d5e92fc9"
+                        alt="Plantilla 2" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                    <img src="https://lightroom.adobe.com/v2c/spaces/6b25d92a62dc4c85849814092093be19/assets/3718b0d7e52acf1f610a271096575d04/revisions/a360a6b7306b4a86bc1d924303eeb5c4/renditions/d9c18a0a34301b560cdd3d3460bfa7de"
+                        alt="Plantilla 3" style="width: 32%; height: 220px; object-fit: cover; border-radius: 10px;">
+                </div>
+                <p>Además, el club ha sumado refuerzos internacionales clave como el brasileño Jean Luiz Rosa Oliveira
+                    Santos y el nigeriano Asagidigbi Feyiseitan Jenyo, quienes se incorporaron en junio de 2025 para
+                    fortalecer al equipo en su búsqueda del ascenso a la Serie B.</p>
+
+                <p>El equipo está bajo la dirección técnica de Leonardo 'Maya' Vanegas, un estratega cuencano que ha
+                    sabido imprimir su filosofía de juego, disciplina y compromiso en el plantel desde que asumió el
+                    mando, su liderazgo ha sido fundamental para el rápido ascenso y el buen desempeño del equipo en sus
+                    primeras competiciones.</p>
+            </div>
+            <!-- Collage de tres imágenes antes de los videos en página 4 -->
+            <div style="display: flex; gap: 12px; justify-content: center; margin: 20px 0;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/4081ef7c989046dcb14dc697a3787dcc/assets/9ce1d196ece68b33276309dbf7a1fd7c/revisions/911c52fe61584a67a02286016d805a64/renditions/dc99716f429d09f5249ebe75e2f2f709"
+                    alt="Plantilla Final 1" style="width: 32%; height: 240px; object-fit: cover; border-radius: 10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/4081ef7c989046dcb14dc697a3787dcc/assets/d0a426ff57895b54b132a2c8de64583f/revisions/737e8b75ea3d491abf55ac386a82ed05/renditions/4893828bcd2195cdcfa537bea96b2448"
+                    alt="Plantilla Final 2" style="width: 32%; height: 240px; object-fit: cover; border-radius: 10px;">
+                <img src="https://lightroom.adobe.com/v2c/spaces/6b25d92a62dc4c85849814092093be19/assets/338ecd57d82256bdea6625a1250e813b/revisions/83980097efc64e55a91974ad88cc060e/renditions/abca045b9f8fd9dc05ef619b5932ea8b"
+                    alt="Plantilla Final 3" style="width: 32%; height: 240px; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div style="display: flex; gap: 12px; justify-content: center; margin: 20px 0;">
+                <video controls src="audio/video1.mp4" style="width: 48%; height: 240px; object-fit: cover; border-radius: 10px;"></video>
+                <video controls src="audio/video2.mp4" style="width: 48%; height: 240px; object-fit: cover; border-radius: 10px;"></video>
+            </div>
+            <div class="section-footer" style="background-color: #002855; color: #8d7a2d; text-align: center; padding: 10px; margin-top: 30px; border-radius: 5px; font-weight: bold;">
+    Hecho por: Roberto Becerra y Paulo Novillo
+</div>
+        </div>
+
+        <!-- Página 5 -->
+        <div class="page" id="future-page">
+            <h1>Mirando al Mañana: Pasión, Innovación y Futuro</h1>
+            <h2>Consolidación y el Anhelado Sueño de la Serie B</h2>
+            <div class="text-box">
+                <p>El éxito de Cuenca Juniors en 2025 es solo el primer capítulo de una historia que el club aspira a
+                    seguir escribiendo con letras doradas. Con el título provincial y la destacada participación en el
+                    Ascenso Nacional y la Copa Ecuador, la mira está puesta firmemente en el ascenso a la Serie B del
+                    fútbol ecuatoriano. Para lograrlo, el club mantiene una estrategia de refuerzo constante de su
+                    plantilla y un enfoque en el desarrollo continuo de sus jugadores.</p>
+                <p>La filosofía de Cuenca Juniors se resume en su lema: <em>"Pasión, innovación, y un compromiso firme
+                        con el futuro"</em>. Esta visión no solo abarca lo deportivo, sino que también busca generar un
+                    impacto positivo en la comunidad. Aunque la información específica sobre infraestructura deportiva
+                    propia del club o programas sociales detallados es limitada en las fuentes actuales, el enfoque en
+                    el desarrollo de talentos y la profesionalización del proyecto sugiere una inversión continua en el
+                    crecimiento integral de la institución.</p>
+                <p>El próximo desafío en la Copa Ecuador 2025 contra Barcelona SC es más que un partido; es una vitrina
+                    nacional que permitirá a Cuenca Juniors mostrar su potencial, atraer nuevos talentos y generar
+                    ingresos cruciales para sus planes de expansión. La expectativa es alta, y el club está listo para
+                    dar la sorpresa.</p>
+            </div>
+            <div style="display: flex; gap: 12px; justify-content: center; margin: 20px 0;">
+                <img src="https://revistawinner.ec/wp-content/uploads/2025/01/20250122_093806-1296x700.jpg"
+                    alt="Cuenca Juniors Celebración" style="width: 48%; height: 240px; object-fit: cover; border-radius: 10px;">
+                <img src="https://studiofutbol.com.ec/wp-content/uploads/2025/06/20250609171414-cuenca-copa-ecuador-cuenca-jr-atletico-vinotinto-1068x725.jpg"
+                    alt="Cuenca Juniors Copa Ecuador" style="width: 48%; height: 240px; object-fit: cover; border-radius: 10px;">
+            </div>
+            <div class="text-box">
+                <p>Cuenca Juniors representa la nueva sangre del fútbol azuayo, un equipo que en poco tiempo ha
+                    demostrado que con trabajo, talento y una visión clara, los sueños pueden hacerse realidad. La
+                    comunidad de Cuenca tiene ahora dos grandes clubes que seguir, y la promesa de un futuro emocionante
+                    en el balompié ecuatoriano.</p>
+                <p>¡Sigue de cerca a los Gallos en sus redes sociales para no perderte ninguna novedad!</p>
+                <ul>
+                    <li><strong>TikTok:</strong> @CuencaJrs_</li>
+                    <li><strong>Twitter:</strong> @CuencaJrs</li>
+                    <li><strong>Facebook:</strong> Cuenca Jrs</li>
+                </ul>
+            </div>
+            <div class="section-footer" style="background-color: #002855; color: #8d7a2d; text-align: center; padding: 10px; margin-top: 30px; border-radius: 5px; font-weight: bold;">
+    Hecho por: Roberto Becerra y Paulo Novillo
+</div>
+        </div>
+
+
+    </div>
+
+    <div class="navigation">
+        <button onclick="navigateTo('note-page')">1</button>
+        <button onclick="navigateTo('media-page')">2</button>
+        <button onclick="navigateTo('interview-page')">3</button>
+        <button onclick="navigateTo('gallery-page')">4</button>
+        <button onclick="navigateTo('future-page')">5</button>
+    </div>
+
+    <footer style="background-color: #002855; color: white; padding: 20px; text-align: center; margin-top: 40px;">
+        &copy; 2025 Cuenca Juniors | Instagram: CuencaJrs | Facebook: CuencaJrs | TikTok: CuencaJrs
+        <div style="margin-top: 10px; display: flex; justify-content: center; gap: 24px;">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" style="width:28px; vertical-align:middle; filter: invert(1);">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" style="width:28px; vertical-align:middle; filter: invert(1);">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" style="width:28px; vertical-align:middle; filter: invert(1);">
+        </div>
+    </footer>
+
+    <script>
+        function navigateTo(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => page.classList.remove('active'));
+            const targetPage = document.getElementById(pageId);
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
